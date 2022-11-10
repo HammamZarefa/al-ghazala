@@ -29,7 +29,7 @@ class FrontController extends Controller
         $banner =Banner::all();
         $general =General::find(1);
         $link = Link::orderBy('name','asc')->get();
-        $lpost =Post::where('status','=','PUBLISH')->orderBy('id','desc')->limit(5)->get();
+        $lpost =Post::where('status','=','PUBLISH')->orderBy('id','desc')->get();
 //        dd($lpost);
         $partner =Partner::orderBy('name','asc')->limit(8)->get();
         $pcategories = Pcategory::all();
@@ -39,9 +39,10 @@ class FrontController extends Controller
         $products=Product::all();
         $featured_product=Product::all()->first();
         $categories = Category::all();
+        $testi=Testimonial::all();
 
 
-        return view ('front.home',compact('categories','about','featured_product','product','banner','products','general','link','lpost','partner','pcategories','portfolios','services'));
+        return view ('front.home',compact('categories','about','featured_product','product','banner','products','general','link','lpost','partner','pcategories','portfolios','services','testi'));
 //        return response()->json([
 //            'status' => 'sucssess' ,
 //            'statusCode' => '200' ,

@@ -66,28 +66,28 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="{{ route('admin.user') }}">Admin</a>
-                    <a class="collapse-item" href="{{ route('admin.role') }}">Role</a>
-                    <a class="collapse-item" href="{{ route('admin.permission') }}">Permission</a>
+                    {{--<a class="collapse-item" href="{{ route('admin.role') }}">Role</a>--}}
+                    {{--<a class="collapse-item" href="{{ route('admin.permission') }}">Permission</a>--}}
                 </div>
             </div>
         </li>
 
-    {{--<!-- Nav Item - Pages Collapse Menu -->--}}
-        {{--<li class="nav-item">--}}
-            {{--<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"--}}
-               {{--aria-expanded="true" aria-controls="collapseTwo">--}}
-                {{--<i class="fas fa-fw fa-table"></i>--}}
-                {{--<span>Blog</span>--}}
-            {{--</a>--}}
-            {{--<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">--}}
-                {{--<div class="bg-white py-2 collapse-inner rounded">--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.post') }}">Blog</a>--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.category') }}">Categories</a>--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.tag') }}">Tags</a>--}}
-                    {{--<a class="collapse-item" href="{{ route('admin.post.trash') }}">Trash</a>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</li>--}}
+    <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+               aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Blog</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="{{ route('admin.post') }}">Blog</a>
+                    <a class="collapse-item" href="{{ route('admin.category') }}">Categories</a>
+                    <a class="collapse-item" href="{{ route('admin.tag') }}">Tags</a>
+                    <a class="collapse-item" href="{{ route('admin.post.trash') }}">Trash</a>
+                </div>
+            </div>
+        </li>
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
@@ -110,23 +110,23 @@
                 <span>FAQ</span></a>
         </li>
 
-        {{--<li class="nav-item">--}}
-            {{--<a class="nav-link" href="{{ route('admin.link') }}">--}}
-                {{--<i class="fas fa-fw fa-table"></i>--}}
-                {{--<span>Links</span></a>--}}
-        {{--</li>--}}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.link') }}">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Links</span></a>
+        </li>
 
-        {{--<li class="nav-item">--}}
-            {{--<a class="nav-link" href="{{ route('admin.page') }}">--}}
-                {{--<i class="fas fa-fw fa-table"></i>--}}
-                {{--<span>Pages</span></a>--}}
-        {{--</li>--}}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.page') }}">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Pages</span></a>
+        </li>
 
-        {{--<li class="nav-item">--}}
-            {{--<a class="nav-link" href="{{ route('admin.partner') }}">--}}
-                {{--<i class="fas fa-fw fa-table"></i>--}}
-                {{--<span>Partners</span></a>--}}
-        {{--</li>--}}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.partner') }}">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Partners</span></a>
+        </li>
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.product') }}">
@@ -140,19 +140,19 @@
                 <span>Services</span></a>
         </li>
 
-        {{--@can('team-list')--}}
-            {{--<li class="nav-item">--}}
-                {{--<a class="nav-link" href="{{ route('admin.team') }}">--}}
-                    {{--<i class="fas fa-fw fa-table"></i>--}}
-                    {{--<span>Team</span></a>--}}
-            {{--</li>--}}
-        {{--@endcan--}}
+        @can('team-list')
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.team') }}">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Team</span></a>
+            </li>
+        @endcan
 
-        {{--<li class="nav-item">--}}
-            {{--<a class="nav-link" href="{{ route('admin.testi') }}">--}}
-                {{--<i class="fas fa-fw fa-table"></i>--}}
-                {{--<span>Testimonials</span></a>--}}
-        {{--</li>--}}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.testi') }}">
+                <i class="fas fa-fw fa-table"></i>
+                <span>Testimonials</span></a>
+        </li>
 
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
@@ -199,8 +199,8 @@
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
                     {{-- dropdown language --}}
-                    <a class="language{{ App::isLocale('en') ? ' active' : '' }}" href="/locale/en">En</a>
-                    <a class="language{{ App::isLocale('ar') ? ' active' : '' }}" href="/locale/ar">Ar</a>
+                    {{--<a class="language{{ App::isLocale('en') ? ' active' : '' }}" href="/locale/en">En</a>--}}
+                    {{--<a class="language{{ App::isLocale('ar') ? ' active' : '' }}" href="/locale/ar">Ar</a>--}}
 
                     <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -221,45 +221,45 @@
                         </div>
                     </li>
                     {{-- notification --}}
-                    <li class="nav-item dropdown no-arrow notification">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-bell"></i>
-                            <span class="badge badge-warning navbar-badge" id="count">
-                        @if(count(auth()->user()->unreadNotifications))
-                                    <span class="badge badge-warning">{{ count(auth()->user()->unreadNotifications) }}</span>
-                                @endif
-                    </span>
-                        </a>
+                    {{--<li class="nav-item dropdown no-arrow notification">--}}
+                        {{--<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"--}}
+                           {{--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+                            {{--<i class="fa fa-bell"></i>--}}
+                            {{--<span class="badge badge-warning navbar-badge" id="count">--}}
+                        {{--@if(count(auth()->user()->unreadNotifications))--}}
+                                    {{--<span class="badge badge-warning">{{ count(auth()->user()->unreadNotifications) }}</span>--}}
+                                {{--@endif--}}
+                    {{--</span>--}}
+                        {{--</a>--}}
                         <!-- Dropdown - Notification Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                             aria-labelledby="userDropdown" role="menu">
-                            <span class="dropdown-header">Unread Notifications</span>
-                            @foreach (auth()->user()->unreadNotifications as $notification)
-                                <a href="#" class="dropdown-item {{ $notification->read_at == null ? 'unread' : '' }}">
-                                    <i class="fas fa-envelope"></i> {{ $notification->data['title'] }}
-                                    <span class="ml-2 pull-right text-muted text-sm">{{ $notification->created_at->diffForHumans() }}</span>
-                                    {{-- <span href="#" class="float-right mark-as-read" data-id="{{ $notification->id }}">
-                                            Mark as read
-                                    </span> --}}
-                                </a>
-                            @endforeach
+                        {{--<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"--}}
+                             {{--aria-labelledby="userDropdown" role="menu">--}}
+                            {{--<span class="dropdown-header">Unread Notifications</span>--}}
+                            {{--@foreach (auth()->user()->unreadNotifications as $notification)--}}
+                                {{--<a href="#" class="dropdown-item {{ $notification->read_at == null ? 'unread' : '' }}">--}}
+                                    {{--<i class="fas fa-envelope"></i> {{ $notification->data['title'] }}--}}
+                                    {{--<span class="ml-2 pull-right text-muted text-sm">{{ $notification->created_at->diffForHumans() }}</span>--}}
+                                    {{-- <span href="#" class="float-right mark-as-read" data-id="{{ $notification->id }}">--}}
+                                            {{--Mark as read--}}
+                                    {{--</span> --}}
+                                {{--</a>--}}
+                            {{--@endforeach--}}
 
-                            <div class="dropdown-divider"></div>
-                            <span class="dropdown-header">Read Notifications</span>
-                            @forelse(auth()->user()->readNotifications as $notification)
-                                <a href="#" class="dropdown-item">
-                                    <i class="fas fa-envelope mr-2"></i> {{ $notification->data['description'] }}
-                                    <span class="ml-3 pull-right text-muted text-sm">{{ $notification->created_at->diffForHumans() }}</span>
-                                </a>
-                            @empty
-                                <span class="ml-3 pull-right text-muted text-sm">no notifications read</span>
-                            @endforelse
+                            {{--<div class="dropdown-divider"></div>--}}
+                            {{--<span class="dropdown-header">Read Notifications</span>--}}
+                            {{--@forelse(auth()->user()->readNotifications as $notification)--}}
+                                {{--<a href="#" class="dropdown-item">--}}
+                                    {{--<i class="fas fa-envelope mr-2"></i> {{ $notification->data['description'] }}--}}
+                                    {{--<span class="ml-3 pull-right text-muted text-sm">{{ $notification->created_at->diffForHumans() }}</span>--}}
+                                {{--</a>--}}
+                            {{--@empty--}}
+                                {{--<span class="ml-3 pull-right text-muted text-sm">no notifications read</span>--}}
+                            {{--@endforelse--}}
 
-                            <div class="dropdown-divider"></div>
+                            {{--<div class="dropdown-divider"></div>--}}
                             {{-- <a href="#" class="dropdown-item dropdown-footer">Mark all as read</a> --}}
-                        </div>
-                    </li>
+                        {{--</div>--}}
+                    {{--</li>--}}
                 </ul>
 
             </nav>

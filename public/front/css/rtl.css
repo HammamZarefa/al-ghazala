@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+body.rtl{
+	direction: rtl;
+}
+body.rtl .waxon_tm_topbar .menu .links ul li:last-child{margin-right: 30px;}
+body.rtl .waxon_tm_topbar .menu .links ul li:first-child{margin-right: 0px;}
+body.rtl .waxon_tm_hero .background .leftpart{
+	left: auto;
+	right: 0px;
+}
+body.rtl .waxon_tm_hero .background .rightpart{
+	padding-left: 0px;
+	padding-right: 33%;
+}
+body.rtl .waxon_tm_about .about_inner .right{
+	padding-left: 0px;
+	padding-right: 100px;
+}
+body.rtl .waxon_tm_about .name h3 .bg{
+	left: auto;
+	right: 0px;
+}
+body.rtl .waxon_tm_service ul li .svg{
+	left: auto;
+	right: 0px;
+}
+body.rtl .waxon_tm_service ul li .details{
+	padding-left: 0px;
+	padding-right: 75px;
+}
+body.rtl .waxon_tm_main_title .title h3 .bg{
+	left: auto;
+	right: 0px;
+}
+body.rtl .waxon_tm_portoflio .portfolio_inner ul li{float: right;}
+body.rtl .waxon_tm_portoflio .portfolio_filter ul{
+	padding-right: 0px;
+	padding-left: 50px;
+}
+body.rtl .waxon_tm_portoflio .portfolio_filter ul li:last-child{margin-right: 30px;}
+body.rtl .waxon_tm_portoflio .portfolio_filter ul li:first-child{margin-left: 0px;}
+body.rtl .waxon_tm_testimonials .short{
+	padding-left: 0px;
+	padding-right: 25px;
+}
+body.rtl .waxon_tm_testimonials .testi_inner .left{
+	padding-left: 50px;
+	padding-right: 0px;
+}
+body.rtl .waxon_tm_testimonials .testi_inner .right{
+	padding-right: 50px;
+	padding-left: 0px;
+}
+body.rtl .waxon_tm_contact .contact_inner .left{
+	padding-left: 25px;
+	padding-right: 0px;
+}
+body.rtl .waxon_tm_contact .right{
+	padding-left: 0px;
+	padding-right: 25px;
+}
+body.rtl .waxon_tm_contact .desc{
+	float: right;
+}
+body.rtl .waxon_tm_copyright .copyright_inner .social ul li:last-child{margin-right: 30px;}
+body.rtl .waxon_tm_copyright .copyright_inner .social ul li:first-child{margin-right: 0px;}
+body.rtl .waxon_tm_mobile_menu .dropdown .dropdown_inner ul li{float: right;}
+body.rtl .waxon_tm_portoflio .portfolio_filter ul li{float: right;}
+body.rtl .waxon_tm_partners ul li{float: right;}
+body.rtl .waxon_tm_news .news_inner ul li{float: right;}
+body.rtl .waxon_tm_copyright .copyright_inner > ul > li{float: right;}
+body.rtl .waxon_tm_modalbox_about .my_box .left{padding-right: 0px;padding-left: 50px;}
+body.rtl .waxon_tm_modalbox_about .my_box .right{padding-right: 50px;padding-left: 0px;}
+body.rtl .progress_inner > span{text-align: right;}
+body.rtl .progress_inner span.number{float: left;}
+body.rtl .waxon_tm_modalbox_news .main_content .quotebox{padding-left: 0px;padding-right: 70px;}
+body.rtl .waxon_tm_modalbox_news .main_content .icon{left: auto;right: 0px;}
+
+
+
+@media(max-width:1040px){
+	body.rtl .waxon_tm_about .about_inner .right{padding-right: 0px;}
+	body.rtl .waxon_tm_contact .contact_inner .left{padding: 0px;}
+	body.rtl .waxon_tm_contact .right{padding: 0px;}
+	body.rtl .waxon_tm_modalbox_about .my_box .left{padding: 0px;}
+	body.rtl .waxon_tm_modalbox_about .my_box .right{padding: 0px;}
+}
+
+@media(max-width:768px){
+	body.rtl .waxon_tm_modalbox_news .main_content .quotebox{padding-right: 0px;}
+}
+.waxon_tm_topbar .menu .links ul li a{
+	font-size: 18px;
+}
+.waxon_tm_contact .waxon_tm_main_title .title h3 .bg{
+	right: -60px !important;
+}
+.waxon_tm_contact .bg_image{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/about/acacia-tree3.jpg);
+	background-size: contain;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-position: left !important;
+	}
+
+.whatsapp{
+	right: 20px !important;
+}
+.whatsapp svg{
+	right: 20px !important;
+}

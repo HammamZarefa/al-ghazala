@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="{{Lang::locale() == 'en' ? 'ltr' : 'rtl'}}">
 
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -13,51 +12,30 @@
     <!-- Favicons -->
     <link href="{{ asset('storage/'.$general->favicon) }}" rel="icon">
     <link href="{{ asset('storage/'.$general->favicon) }}" rel="apple-touch-icon">
-    {{--<link href="{{asset('front/bootstrap/css/bootstrap.css')}}" rel="stylesheet">--}}
-    {{--<link href="{{asset('front/css/ui.css')}}" rel="stylesheet">--}}
-    {{--<link href="{{asset('front/css/base.css')}}" rel="stylesheet">--}}
-    {{--<link href="{{asset('front/css/style-blue.css')}}" rel="stylesheet">--}}
-    <!-- Font Awesome -->
-    <link href="{{asset('front/css/font-awesome.min.css')}}" rel="stylesheet">
 
-    <!-- Slider -->
-    <link href="{{asset('front/rs-plugin/css/settings.css')}}" rel="stylesheet"/>
-    <link href="{{asset('front/showbizpro/css/settings.css')}}" rel="stylesheet" media="screen"/>
+    {{--<!-- Font Awesome -->--}}
+    {{--<link href="{{asset('front/css/font-awesome.min.css')}}" rel="stylesheet">--}}
+    <!-- STYLES -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+    {{--<!-- Slider -->--}}
+    {{--<link href="{{asset('front/rs-plugin/css/settings.css')}}" rel="stylesheet"/>--}}
+    {{--<link href="{{asset('front/showbizpro/css/settings.css')}}" rel="stylesheet" media="screen"/>--}}
 
     <!-- Favicon -->
     <link href="{{asset('front/images/favicon.ico')}}" rel="shortcut icon">
-    <link rel="stylesheet" href="{{asset('front/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/jquery.bxslider.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/animate.min.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/feather.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/slick.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/lightbox.css')}}">
-    <link rel="stylesheet" href="{{asset('front/css/owl.carousel.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('front/rs-plugin/css/settings.css')}}" media="screen">
-    <link rel="stylesheet" href="{{asset('front/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/plugins.css')}}">
+    <link rel="stylesheet" href="{{asset('front/css/colors.css')}}">
     <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
-    <script src="{{asset('front/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')}}"></script>
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600,500" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-    <script src="{{asset('front/js/jquery-1.8.2.min.js')}}"></script>
 
-
-    <!-- JQUERY -->
-    {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>--}}
-
-    {{--<!--[if lt IE 9]>--}}
-    {{--<link rel="stylesheet" href="{{asset('front/css/nill-box-menu-ie8.css')}}">--}}
-    {{--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>--}}
-    {{--<![endif]-->--}}
-
-    {{--<!--[if lt IE 10]>--}}
-    {{--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>--}}
-    {{--<script src="{{asset('front/js/jquery.placeholder.min.js')}}"></script>--}}
-    {{--<![endif]-->--}}
-
+    {{--<script src="{{asset('front/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')}}"></script>--}}
+    {{--<link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600,500" rel="stylesheet" type="text/css">--}}
+    {{--<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600&subset=latin,latin-ext" rel="stylesheet" type="text/css">--}}
+    {{--<script src="{{asset('front/js/jquery-1.8.2.min.js')}}"></script>--}}
     <!-- Favicon -->
-    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="{{ asset('storage/'.$general->favicon) }}" rel="shortcut icon">
 
 @yield('meta')
 
@@ -77,199 +55,320 @@
   ======================================================== -->
 </head>
 <body class="onepage">
-<div id="preloader"></div>
-<div id="home"></div>
-<div id="nav-main" class="sticky-menu">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div id="logo-container">
-                    <div class="tb">
-                        <div class="tb-cell">
-                            <a href="/" id="logo">
-                                <img alt="" title="logo" src="{{asset('front/images/logo.png')}}" class="img-responsive" style="max-width: 30%"/>
-                            </a>
-                            <a href="index.html" id="logo-white">
-                                <img alt="" title="logo" src="{{asset('front/images/logo.png')}}" class="img-responsive" style="max-width: 30%"/>
-                            </a>
+<div class="acacia-anim ">
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+    <div><img src="{{asset('front/img/acacia-icon1.png')}}" alt=""></div>
+</div>
+<div class="whatsapp">
+    <img src="{{asset('front/img/acacia-icon2.png')}}" alt="">
+    <a href="https://wa.me/00971505889285" target="_blank"><img class="svg" src="{{asset('front/img//svg/social/whatsapp.svg')}}" alt="" /></a>
+</div>
+<!-- PRELOADER -->
+<div class="waxon_tm_preloader">
+    <div class="spinner_wrap">
+        <div class="spinner"></div>
+    </div>
+</div>
+<!-- /PRELOADER -->
+
+<!-- WRAPPER ALL -->
+
+<!-- MAGIC CURSOR VALUES: show, hide -->
+<!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
+
+<div class="waxon_tm_all_wrap" data-magic-cursor="show" data-color="black">
+
+    <!-- MODALBOX NEWS -->
+    <div class="waxon_tm_modalbox_news">
+        <div class="box_inner">
+            <div class="close">
+                <a href="#"><img class="svg" src="{{asset('front/img/svg/cancel.svg')}}" alt="" /></a>
+            </div>
+            <div class="description_wrap"></div>
+        </div>
+    </div>
+    <!-- /MODALBOX NEWS -->
+
+    <!-- MODALBOX ABOUT -->
+    <div class="waxon_tm_modalbox_about">
+        <div class="box_inner">
+            <div class="close">
+                <a href="#"><img class="svg" src="{{asset('front/img/svg/cancel.svg')}}" alt="" /></a>
+            </div>
+            <div class="description_wrap">
+                <div class="my_box">
+                    <div class="left">
+                        <div class="about_title">
+                            <h3>Programming Skills</h3>
+                        </div>
+                        <div class="waxon_progress">
+                            <div class="progress_inner" data-value="95">
+                                <span><span class="label">Wordpress &amp; PHP</span><span class="number">95%</span></span>
+                                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                            </div>
+                            <div class="progress_inner" data-value="80" >
+                                <span><span class="label">Javascript &amp; React</span><span class="number">80%</span></span>
+                                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                            </div>
+                            <div class="progress_inner" data-value="90">
+                                <span><span class="label">HTML &amp; CSS</span><span class="number">90%</span></span>
+                                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="about_title">
+                            <h3>Language Skills</h3>
+                        </div>
+                        <div class="waxon_progress">
+                            <div class="progress_inner" data-value="95">
+                                <span><span class="label">English</span><span class="number">95%</span></span>
+                                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                            </div>
+                            <div class="progress_inner" data-value="90" >
+                                <span><span class="label">Japanese</span><span class="number">90%</span></span>
+                                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                            </div>
+                            <div class="progress_inner" data-value="85">
+                                <span><span class="label">Arabian</span><span class="number">85%</span></span>
+                                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <nav class="menu_container">
-                    <ul id="desktop-menu" class="visible-md visible-lg">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2130 active"><a href="#home">{{__('message.home')}}</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2131"><a href="#about">{{__('message.About')}}</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2132"><a href="#services">{{__('message.services')}}</a></li>
-                        <!--<li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2133"><a href="#team">TEAM</a></li>-->
-                        <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2134"><a href="#portfolio">{{__('message.Products')}}</a></li>
-                        <!--<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2135">-->
-                        <!--<a href="blog.html">BLOG</a>-->
-                        <!--<ul class="sub-menu">-->
-                        <!--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2130"><a href="blog_full.html">FULL WIDTH</a></li>-->
-                        <!--<li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2131"><a href="blog_left.html">LEFT SIDEBAR</a></li>-->
-                        <!--</ul>-->
-                        <!--</li>-->
-                        <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2136"><a href="#contact">{{__('message.Contact')}}</a></li>
-                        <!--<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2139"><a href="shortcodes.html">SHORTCODES</a></li>-->
+                <div class="counter">
+                    <div class="about_title">
+                        <h3>Fun Facts</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="list_inner">
+                                <h3>777+</h3>
+                                <span>Projects Completed</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <h3>3K+</h3>
+                                <span>Happy Clients</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <h3>9K+</h3>
+                                <span>Lines of Code</span>
+                            </div>
+                        </li>
                     </ul>
-                </nav>
-                <div id="mobile-menu-button" class="hidden-md hidden-lg">
-                    <i class="fa fa-bars"></i>
                 </div>
-                <div class="clear"></div>
+                <div class="partners">
+                    <div class="about_title">
+                        <h3>Our Partners</h3>
+                    </div>
+                    <ul class="owl-carousel">
+                        <li class="item"><a href="#"><img src="{{asset('front/img/partners/1.png')}}" alt="" /></a></li>
+                        <li class="item"><a href="#"><img src="{{asset('front/img/partners/2.png')}}" alt="" /></a></li>
+                        <li class="item"><a href="#"><img src="{{asset('front/img/partners/3.png')}}" alt="" /></a></li>
+                        <li class="item"><a href="#"><img src={{asset('front/img/partners/4.png')}}"" alt="" /></a></li>
+                        <li class="item"><a href="#"><img src="{{asset('front/img/partners/5.png')}}" alt="" /></a></li>
+                        <li class="item"><a href="#"><img src="{{asset('front/img/partners/6.png')}}" alt="" /></a></li>
+                        <li class="item"><a href="#"><img src="{{asset('front/img/partners/7.png')}}" alt="" /></a></li>
+                        <li class="item"><a href="#"><img src="{{asset('front/img/partners/8.png')}}" alt="" /></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <!-- MOBILE MENU -->
-    <nav class="container hidden-lg hidden-md">
-        <div id="mobile-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul>
-                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2130 active"><a href="#header-main">{{__('message.home')}}</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2131"><a href="#about">{{__('message.About')}}</a></li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2132"><a href="#services">{{__('message.services')}}</a></li>
-                            <!--<li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2133"><a href="#team">TEAM</a></li>-->
-                            <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2134"><a href="#products">{{__('message.Products')}}</a></li>
-                            <!--<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2135"><a href="#">BLOG</a>-->
-                            <!--<ul class="sub-menu">-->
-                            <!--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2130"><a href="blog_full.html">FULL WIDTH</a></li>-->
-                            <!--<li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2131"><a href="blog_left.html">LEFT SIDEBAR</a></li>-->
-                            <!--</ul>-->
-                            <!--</li>-->
-                            <li class="menu-item menu-item-type-post_type menu-item-object-onepage menu-item-2136"><a href="#contact">{{__('message.Contact')}}</a></li>
-                            <!--<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2139"><a href="shortcodes.html">SHORTCODES</a></li>-->
+    <!-- /MODALBOX ABOUT -->
+
+    <!-- TOPBAR -->
+    <div class="waxon_tm_topbar">
+        <div class="container">
+            <div class="topbar_inner">
+                <div class="logo">
+                    <img src="{{ asset('storage/'.$general->logo) }}" alt="" />
+                </div>
+                <div class="menu">
+                    <div class="links">
+                        <ul class="anchor_nav">
+                            <li class="current">
+                                <a href="#home">
+                                    <span class="first">Home</span>
+                                    <span class="second">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about">
+                                    <span class="first">About</span>
+                                    <span class="second">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">
+                                    <span class="first">Portfolio</span>
+                                    <span class="second">Portfolio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#news">
+                                    <span class="first">News</span>
+                                    <span class="second">News</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">
+                                    <span class="first">Contact</span>
+                                    <span class="second">Contact</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index-rtl.html">
+                                    <span class="first"><img src="{{asset('front/img/svg/social/globe-solid.svg')}}" alt=""></span>
+                                    <span class="second"><img src="{{asset('front/img/svg/social/globe-solid.svg')}}" alt=""></span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
-</div>
+    </div>
+    <!-- /TOPBAR -->
+
+    <!-- MOBILE MENU -->
+    <div class="waxon_tm_mobile_menu">
+        <div class="topbar_inner">
+            <div class="container bigger">
+                <div class="topbar_in">
+                    <div class="logo">
+                        <a href="#"><img src="{{ asset('storage/'.$general->logo) }}" alt="" /></a>
+                    </div>
+                    <div class="my_trigger">
+                        <div class="hamburger hamburger--collapse-r">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">
+                <div class="dropdown_inner">
+                    <ul class="anchor_nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="index-rtl.html">Language</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /MOBILE MENU -->
 
 @yield('content')
 
-<!-- ======= Footer ======= -->
-{{--<footer class="footer">--}}
-    {{--<div class="footer__center container">--}}
-
-        {{--<div class="footer__container adjustbxflex row">--}}
-            {{--<div class="footer__wrap"><a class="footer__logo" href="/"><img class="some-icon lazy_a"--}}
-                                                                            {{--data-original="{{ asset('storage/'.$general->logo) }}"--}}
-                                                                            {{--alt="Yes Soft"--}}
-                                                                            {{--src="{{ asset('storage/'.$general->logo) }}"--}}
-                                                                            {{--style=""></a>--}}
-                {{--<div class="footer__text">{{$about->subject}}</div>--}}
-                {{--<div class="footer__social">--}}
-                    {{--<a class="footer__link" href="{{$general->facebook}}" target="_blank">--}}
-                        {{--<img class="lazy_a" data-original="{{ asset('front/img/icons/facebook.svg') }}"--}}
-                             {{--alt="Yes Soft Social Media" src="{{ asset('front/img/icons/facebook.svg') }}">--}}
-                        {{--<i class="fab fa-facebook-f fa-fw fa-2x"></i>--}}
-                    {{--</a>--}}
-                    {{--<a class="footer__link" href="{{$general->twitter}}" target="_blank">--}}
-                        {{--<img class="lazy_a" data-original="{{ asset('front/img/icons/Twitter.svg') }}"--}}
-                             {{--alt="Yes Soft Social Media" src="{{ asset('front/img/icons/Twitter.svg') }}">--}}
-                    {{--</a>--}}
-                    {{--<a class="footer__link" href="{{$general->youtube}}" target="_blank">--}}
-                        {{--<img class="lazy_a" data-original="{{ asset('front/img/icons/Youtube.svg') }}"--}}
-                             {{--alt="Yes Soft Social Media" src="{{ asset('front/img/icons/Youtube.svg') }}">--}}
-                    {{--</a>--}}
-                    {{--<a class="footer__link" href="{{$general->linkedin}}" target="_blank">--}}
-                        {{--<img class="lazy_a" data-original="{{ asset('front/img/icons/linkedin.svg') }}"--}}
-                             {{--alt="Yes Soft Social Media" src="{{ asset('front/img/icons/linkedin.svg') }}">--}}
-                    {{--</a>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            {{--<div class="footer__row">--}}
-                {{--<div class="footer__col">--}}
-                    {{--<div class="footer__category">{{__('message.Products')}}</div>--}}
-                    {{--<div class="footer__menu">--}}
-                        {{--@foreach($product as $products)--}}
-                            {{--<a class="footer__item" href="{{ $products->link }}">{{ $products->name }}</a>--}}
-                        {{--@endforeach--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-                {{--<div class="footer__col">--}}
-                {{--<div class="footer__category">The Beta Lab</div>--}}
-                {{--<div class="footer__menu"><a class="footer__item" href="/bulbul/">Bulbul</a><a class="footer__item" href="/flightmaphome/">Flightmap</a><a class="footer__item" href="/fugu/">Fugu</a><a class="footer__item" href="/husky/">Husky</a></div>--}}
-                {{--</div>--}}
-                {{--<div class="footer__col">--}}
-                    {{--<div class="footer__category">{{__('message.Quick Links')}}</div>--}}
-                    {{--<div class="footer__menu">--}}
-                        {{--<a class="footer__item" href="{{route('contact')}}">{{__('message.contact Us')}}</a>--}}
-                        {{--<a class="footer__item" href="{{route('product')}}">{{__('message.Products')}}</a>--}}
-                        {{--<a class="footer__item" href="/services/">{{__('message.service')}}</a>--}}
-                        {{--<a class="footer__item" href="{{route('about')}}">{{__('message.About Us')}}</a>--}}
-                        {{--<a class="footer__item" href="{{route('blog')}}">{{__('message.blogs')}}</a>--}}
-{{--                        @foreach($link as $link)--}}
-{{--                            <a class="footer__item" href="{{$link->link}}" target="_blank">{{$link->name}}</a>--}}
-{{--                        @endforeach--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                {{--<div class="footer__col">--}}
-                    {{--<div class="footer__category">{{__('message.Quick Links')}} </div>--}}
-                    {{--<div class="footer__menu">--}}
-                        {{--<div class="addjwset">--}}
-                            {{--<p class="addressSetjw opShow">--}}
-                                {{--<span>Ger</span>--}}
-                                {{--<i>{{$general->address1}}</i>--}}
-                            {{--</p>--}}
-                            {{--<p class="addressSetjw opShow">--}}
-                                {{--<span>Brazil</span>--}}
-                                {{--<i>{{$general->address1}}</i>--}}
-                            {{--</p>--}}
-                            {{--<p class="addressSetjw opShow">--}}
-                                {{--<span>UAE</span>--}}
-                                {{--<i>{{$general->address1}}</i>--}}
-                            {{--</p>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-        {{--<div class="row adjustbxflex aligncenterflex copyRightjws">--}}
-            {{--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 orderm2">--}}
-                {{--<div class="footer__copyright">{{__('message.rights reserved')}}</div>--}}
-            {{--</div>--}}
-            {{--<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 orderm1">--}}
-                {{--<p><a href="/terms-and-conditions/" class="footer__item">{{__('message.Terms & Conditions')}}</a> | <a--}}
-                        {{--href="/privacy-policy/" class="footer__item">{{__('message.Privacy Policy')}}</a></p>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-
-    {{--</div>--}}
-{{--</footer><!-- End Footer -->--}}
-<footer id="foot-page">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-lg-6 column">
-                <span>@2022 <a href="https://yes-soft.de" target="_blank">Yes Soft.</a> All Right Reserved.</span>
+<!-- COPYRIGHT -->
+    <div class="waxon_tm_copyright">
+        <div class="container">
+            <div class="copyright_inner">
+                <ul>
+                    <li class="wow fadeInDown" data-wow-duration="0.8s">
+                        <span>ACACIA</span>
+                        <span>General Trading</span>
+                    </li>
+                    <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <span>Brook 103,</span>
+                        <span>90021 New York, USA</span>
+                    </li>
+                    <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                        <span><a href="#">hi@waxon.com</a></span>
+                        <span>+77 033 442 55 57</span>
+                    </li>
+                    <li class="wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="0.6s">
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="first"><img class="svg" src="{{asset('front/img/svg/social/facebook.svg')}}" alt="" /></span>
+                                        <span class="second"><img class="svg" src="{{asset('front/img/svg/social/facebook.svg')}}" alt="" /></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="first"><img class="svg" src="{{asset('front/img/svg/social/twitter.svg')}}" alt="" /></span>
+                                        <span class="second"><img class="svg" src="{{asset('front/img/svg/social/twitter.svg')}}" alt="" /></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="first"><img class="svg" src="{{asset('front/img/svg/social/instagram.svg')}}" alt="" /></span>
+                                        <span class="second"><img class="svg" src="{{asset('front/img/svg/social/instagram.svg')}}" alt="" /></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="first"><img class="svg" src="{{asset('front/img/svg/social/soundcloud.svg')}}" alt="" /></span>
+                                        <span class="second"><img class="svg" src="{{asset('front/img/svg/social/soundcloud.svg')}}" alt="" /></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="first"><img class="svg" src="{{asset('front/img/svg/social/youtube.svg')}}" alt="" /></span>
+                                        <span class="second"><img class="svg" src="{{asset('front/img/svg/social/youtube.svg')}}" alt="" /></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="first"><img class="svg" src="{{asset('front/img/svg/social/facebook.svg')}}" alt="" /></span>
+                                        <span class="second"><img class="svg" src="{{asset('front/img/svg/social/facebook.svg')}}" alt="" /></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!--<div class="col-sm-6 col-lg-6 column">-->
-            <!--<div class="social-icon">-->
-            <!--<a href="#" class="social-1"><i class="fa fa-facebook"></i></a>-->
-            <!--<a href="#" class="social-1"><i class="fa fa-twitter"></i></a>-->
-            <!--<a href="#" class="social-1"><i class="fa fa-linkedin"></i></a>-->
-            <!--</div>                                                         -->
-            <!--</div>-->
         </div>
     </div>
-</footer>
-<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-<!--<script src="js/jquery.fitvids.js"></script>-->
-<!--<script src="js/jquery.timer.js"></script>-->
-<script src="{{ asset('front/js/jquery.sticky.js')}}"></script>
-{{--<!--<script src="{{ asset('front/js/timeago.js')}}"></script>-->--}}
-{{--<!--<script src="{{ asset('front/js/jquery.currentMenuItem.js') }}"></script>-->--}}
-<script src="{{ asset('front/js/plugins.js' )}}"></script>
-<script src="{{ asset('front/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>
-<script src="{{ asset('front/rs-plugin/js/jquery.themepunch.revolution.min.js' )}}"></script>
-<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>-->
-<script src="{{ asset('front/js/main.js' )}}"></script>
-<!--<script src={{ asset('front/"js/retina.min.js') }}"></script>-->
-{{--//////////////////////--}}
+    <!-- /COPYRIGHT -->
+
+    <!-- MAGIC CURSOR -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- /MAGIC CURSOR -->
+
+
+</div>
+<!-- / WRAPPER ALL -->
+
+<!-- SCRIPTS -->
+<script src="{{asset('front/js/jquery.js')}}"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="{{asset('front/js/ie8.js')}}"></script> <![endif]-->
+<script src="{{asset('front/js/plugins.js')}}"></script>
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap"></script> -->
+<script src="{{asset('front/js/init.js')}}"></script>
+<script src="{{asset('front/js/main.js')}}"></script>
+<!-- /SCRIPTS -->
 
 </body>
 </html>
+
+{{--<script src="{{ asset('front/js/jquery.sticky.js')}}"></script>--}}
+{{--<!--<script src="{{ asset('front/js/timeago.js')}}"></script>-->--}}
+{{--<!--<script src="{{ asset('front/js/jquery.currentMenuItem.js') }}"></script>-->--}}
+{{--<script src="{{ asset('front/js/plugins.js' )}}"></script>--}}
+{{--<script src="{{ asset('front/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>--}}
+{{--<script src="{{ asset('front/rs-plugin/js/jquery.themepunch.revolution.min.js' )}}"></script>--}}
+{{--<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>-->--}}
+{{--<script src="{{ asset('front/js/main.js' )}}"></script>--}}
